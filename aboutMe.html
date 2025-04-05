@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics END-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me Page</title>
+<link rel="shortcut icon" href="resources/MyLogo_small.jpg">
+<!--link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"-->
+<link rel="stylesheet" href="css/site.css?v=1.2">
+<!--<link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
+<link rel="stylesheet" href="css/homeStyle.css?v=1.1">-->
+<link rel="stylesheet" href="css/aboutMe.css?v=1.3">
+<link rel="stylesheet" href="css/materialIcons.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/aos.css">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <nav id="mainNav"  data-aos="fade-down">
+    <ul>
+      <li><a href="home.html"><i class="material-icons md-36">home</i><p>Home</p></a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><i class="material-icons md-36">image</i><p>Projects</p></a>
+        <div class="dropdown-content">
+          <a href="utProject.html">Usability Testing</a>
+          <a href="dataAnalysisProject.html">UX Measurement in Online Banking</a>
+          <a href="amazonProject.html">Amazon.com Casestudy</a>
+          <a href="ninjaFolioProject.html">Portfolio UX Design</a>
+<!--           <a href="pizzeriaProject.html">Pizzeria UX Re-Design</a> -->
+<!--           <a href="ffdMobileProject.html">Mobile App Analysis & Design</a> -->
+<!--           <a href="elderCareProject.html">UX in Elder Care Support System</a> -->
+        </div>
+      </li>
+      <li><a href="aboutMe.html"><i class="material-icons md-36">person</i><p>About</p></a></li>
+      <li><a href="home.html#contact_division"><i class="material-icons md-36">mail</i><p>Contact</p></a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="MobPageTitle">
+      <img class="BGTitle4Mob" style="z-index:1;" src="resources/aboutMe/mobHomeHero5.jpg" alt="Mobile Page Title BG">
+      <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+      <h3 class="PageTitle4Mob">About Me</h3>
+    </div>
+    <div id="modalMenuDiv" class="modalMenuBG" style="display:none;">
+      <nav id="mobNav">
+        <a href="home.html" onclick="hideMenu()">Home</a>
+        <a href="#projects_division" onclick="hideMenu()">
+          Projects
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Usability Testing</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Measuring UX</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
+		<a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio Design</a>        
+<!--    <a href="ffdMobileProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Mobile App Analysis & Design</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria Redesign</a>  -->
+        <a href="aboutMe.html" onclick="hideMenu()">About</a>
+        <a href="home.html#contact_division" onclick="hideMenu()">Contact</a>
+      </nav>
+    </div>
+
+    <div id="modalBox" class="modal">
+      <div>
+        <input type="button" class="close zoomButton" value="&times">
+      </div>
+      <div id="modalImageContainer">
+        <img id="modalImage" class="modal-content">
+      </div>
+      <div style="text-align:center;">
+        <input type="button" id="zoomin" class="zoomButton" value="+"/>
+        <input type="button" id="zoomout" class="zoomButton" value="-"/>
+      </div>
+    </div>
+
+    <header id="aboutMeHeader">
+      <!--<img src="resources/UTesting/bentleyHeroblur.jpg" alt="bentley university hero image">
+      <h1 class="pageTitle">About Me Lakshmy</h1>
+      <p></p>-->
+      <!--<div class="about_division" id="about_division">-->
+    </header>
+
+    <div class="aboutMeSubDiv" data-aos="fade-zoom-in" data-aos-delay="300">
+      <!--<h2>About</h2>-->
+      <div class="myPicture">
+        <img src="resources/aboutMe/family.JPG" alt="My Picture">
+      </div>
+      <div id="credoSubDiv">
+        <h3 style="font-size: 2em;font-size: 2rem;">Hi there!</h3>
+        <!--p style="text-align:justify;">I am a passionate designer and developer and that's what I do the best.
+          My credo is to provide an experience design that humanizes technology.<br><br>
+          Demystifying problems with critical thinking and focused interaction that leads to impactful solutions excites me the most.
+          I take an analytical approach in simplifying the way people work together and interact with products and technologies to
+          build meaningful relationships. I believe this to be the pinnacle to organizational and individual development.<br><br>
+          During my free time, I do a variety of things. I like to innovate new crochet patterns, listen to Indian music, cook food,
+          watch movies, and re-think them in different possible ways. Travel and photography interest me as well. I like to keep fit
+          and exercise daily.</p-->
+        <p style="text-align:justify;"> I am a responsible mother of a naughty toddler and a loving wife. Apart from an IT services person, I do a variety of things. I like to 
+          innovate new crochet patterns, listen to Indian music, cook food, watch and analyze a lot of movies and web series, and re-think them in different possible ways. 
+          Travel and photography interest me as well. I like to keep fit and exercise daily.</p>
+        </div>
+      </div>
+
+      <!--<div id="skillsSubDiv" style="width:100%">-->
+      <div id="skillsSubDiv">
+        <!--<h3>Skillsets</h3>-->
+        <div id="skillsImage">
+          <img src="resources/aboutMe/skills.jpg" alt="Skills Picture">
+          <!--<img src="resources/home/myName.png" alt="Skills Picture">-->
+        </div>
+        <div id="skillContent">
+          <!--<div id="uxdesign" style="height:100vh; overflow:auto;">-->
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-pencil"></i>&nbsp;<u>Quality Assurance</u></h4>
+            <div style="float:left; padding-right:4rem;" data-aos="fade-right">
+              <h4>Manual Testing</h4>
+              <ul>
+               <!--  <br><br>  -->
+                <li>System Testing</li>
+                <li>Integration Testing</li>
+                <li>Static Testing</li>
+                <li>Usability Testing</li>
+              </ul>
+               <h4>API Testing</h4>
+              <ul>
+               <!--  <br><br>  -->
+                <li>Postman</li>
+              </ul>
+              <h4>Automation Testing</h4>
+              <ul>
+               <!--  <br><br>  -->
+                <li>Selenium</li>
+              </ul>
+            </div>
+            <div style="float:left;" data-aos="fade-right">
+              <h4>Tools</h4>
+              <ul>
+                <li>Eclipse</li>
+                <li>IntelliJ</li>
+                <li>HP Quality Center</li>
+                <li>Jira</li>
+                <li>Azure DevOps</li>
+                <li>Github</li>
+                <li>Chrome Developer Toolkit</li>
+                <li>Google Analytics</li>
+              </ul>
+            </div>
+          </div>
+          <!--</div>-->
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-code" style="font-size:18px;"></i>&nbsp;<u>Development</u></h4>
+            <div style="float:left; padding-right:4rem;" data-aos="fade-right">
+              <h4>Front-end Development</h4>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <!-- <li>SASS</li> 
+                <li>JQuery</li> 
+                <li>BootStrap</li>  -->
+              </ul>
+              <br><br>
+              <h4>Back-end Development</h4>
+              <ul>
+                <li>Core Java</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div style="float:left;" data-aos="fade-right">
+              <h4>Development Enviornments</h4>
+              <ul>
+                <li>DreamWeaver</li>
+                <li>atom.io</li>
+                <li>Eclipse</li>
+                <li>IntelliJ</li>
+              </ul>
+            </div>
+          </div>
+   		  <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-wrench" style="font-size:18px;"></i>&nbsp;<u>Project Management</u></h4>
+            <div style="float:left; padding-right:4rem;" data-aos="fade-right">
+              <h4>Practices</h4> 
+              <ul>
+                <li>SDLC</li>
+                <li>STLC</li>
+                <li>Agile - daily Scrum</li>
+                <li>Waterfall</li>
+              </ul>
+            </div>
+            <div style="float:left;" data-aos="fade-right">
+              <h4>DevOps</h4>
+              <ul>
+                <li>Azure DevOps</li>
+                <li>Linux/Unix OS</li>
+                <li>Putty</li>
+                <li>Cygwin</li>
+                <li>WinSCP</li>
+                <li>Winmerge</li>
+                <li>GitHub</li>
+                <li>CVS Versioning Tool</li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+
+      <div id="skillsSubDiv4mobile">
+        <h3>Skillsets</h3>
+        <!--<div id="uxdesign" style="height:100vh; overflow:auto;">-->
+        <div class="skillsColumn">
+          <h4 style="font-size:1.5rem; padding:1.5rem 0;"><i class="fa fa-pencil"></i>&nbsp;<u>Quality Assurance</u></h4>
+          <div>
+          <h4 style="padding: 1em 0;padding: 1rem 0;">Manual Testing</h4>
+            <ul data-aos="fade-right">
+              <li>System Testing</li>
+              <li>Integration Testing</li>
+              <li>Static Testing</li>
+              <li>Usability Testing</li>
+              <li>API testing - Postman</li>
+              <li>Automation testing - Selenium</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Software Tools</h4>
+            <ul data-aos="fade-right">
+              <li>Eclipse</li>
+              <li>IntelliJ</li>
+              <li>HP Quality Center</li>
+              <li>Jira</li>
+              <li>Azure DevOps</li>
+              <li>Github</li>
+              <li>Chrome Developer ToolKit</li>
+              <li>Google Analytics</li>
+            </ul>
+          </div>
+        </div>
+        <!--</div>-->
+        <div class="skillsColumn">
+          <h4 style="font-size:1.5rem; padding:1.5rem 0;"><i class="fa fa-code" style="font-size:18px;"></i>&nbsp;<u>Development</u></h4>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Front-end Development</h4>
+            <ul data-aos="fade-right">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Back-end Development</h4>
+            <ul data-aos="fade-right">
+              <li>Core Java</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Development Enviornments</h4>
+            <ul data-aos="fade-right">
+              <li>DreamWeaver</li>
+              <li>atom.io</li>
+              <li>Eclipse</li>
+              <li>IntelliJ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skillsColumn">
+          <h4 style="font-size:1.5rem; padding:1.5rem 0;"><i class="fa fa-wrench" style="font-size:18px;"></i>&nbsp;<u>Project Management</u></h4>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Practices</h4>
+            <ul data-aos="fade-right">
+              <li>SDLC</li>
+              <li>STLC</li>
+              <li>Agile - daily Scrum</li>
+              <li>Waterfall</li>
+              <li>HP Quality Center</li>
+              <li>Chrome Developer Toolkit</li>
+              <li>Google Analytics</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">DevOps</h4>
+            <ul data-aos="fade-right">
+              <li>Azure DevOps</li>
+                <li>Linux/Unix OS</li>
+                <li>Putty</li>
+                <li>Cygwin</li>
+                <li>WinSCP</li>
+                <li>Winmerge</li>
+                <li>GitHub</li>
+                <li>CVS Versioning Tool</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="academicSubDiv">
+        <!--<h3 style="clear:left;">Qualifications</h3>
+        <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-pencil"></i>&nbsp;<u>UX Design</u></h4>
+        <div style="float:left; padding-right:4rem;">-->
+        <div id="academicsImage">
+          <img src="resources/aboutMe/academics.png" alt="Academics Picture">
+        </div>
+        <div id="academicsContent">
+          <div style="display:inline-block; padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;">Academics</h4>
+            <ul data-aos="fade-right">
+              <li>Bachelor of Technology, Computer Science and Engineering, Kerala University, Trivandrum, India, 2007-2011</li>
+              <li>User Experience and Usability Testing Certificate Program, Bentley University, Boston, USA, 2019-2020</li>
+              <li>User Experience Certificate Program, American Graphic Institute, Boston, USA, 2018-2019</li>
+            </ul>
+          </div>
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;">Certifications</h4>
+            <ul  data-aos="fade-right">
+              <li>'ISTQB CTFL 4.0 Foundation Level Certification', 2024</li>
+              <li>'Postman Badge' for API Automation Testing, 2024</li>
+              <li>‘Selenium with Java and Cucumber’ course from Udemy, 2023 (Ongoing)</li>
+              <li>'HackerRank SQL Badge' Challenge, 2024 (Ongoing)</li>
+              <li>‘Scrum Master’ Certification from International Scrum Institute, License# 92452068986371, 2021</li>
+              <li>'Retail Domain Level 1' certification provided by GAMAcademy, USTGlobal, Trivandrum, India, 2014</li>
+              <li>'ALPHA leadership certification' on Java provided by GAMAcademy, USTGlobal, Trivandrum, India, 2012</li>
+            </ul>
+          </div>
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;">Awards and Recognitions</h4>
+            <ul  data-aos="fade-right">
+             <!--<li>Project experience in user experience design life cycle - requirements gathering, user research, user and task analysis, information architecture, wire-framing, low/high fidelity prototyping, usability testing, rapid application design and development, deployment, quality control, user experience/engagement measurement and data analytics</li>-->
+              <li>High 5 for 'Winning Together' for on-time successful deployment of a migration project, 2022, RM ESI</li>
+              <li>High 5 for 'Being Brave' for presenting sprint demo confidently and clearly, 2022, RM ESI</li>
+              <li>'Junior Techie' Award for delivery excellence Q4, 2013, UST Global</li>
+              <li>'Execution mind-set' Award for prompt project deliveries Q4, 2014, UST Global</li>
+              <li>'Extra Business Mile' Award for good business knowledge Q1, 2015, UST Global</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="academicSubDiv4mobile">
+        <h3 style="clear:left;">Qualifications</h3>
+        <div class="academics">
+          <h4>Academics</h4>
+          <ul data-aos="fade-right">
+            <li>Bachelor of Technology, <b>Computer Science and Engineering</b>, Kerala University, Trivandrum, India, 2007-2011</li>
+            <li>User Experience and Usability Testing Certificate Program, <b>Bentley University</b>, Boston, USA, 2019-2020</li>
+            <li>User Experience Certificate Program, <b>American Graphic Institute</b>, Boston, USA, 2018-2019</li>
+          </ul>
+          <h4>Certifications</h4>
+          <ul data-aos="fade-right">
+            <li>'ISTQB CTFL 4.0 Foundation Level Certification', 2024</li>
+              <li>'Postman Badge' for API Automation Testing, 2024</li>
+              <li>‘Selenium with Java and Cucumber’ course from Udemy, 2023 (Ongoing)</li>
+              <li>'HackerRank SQL Badge' Challenge, 2024 (Ongoing)</li>
+              <li>‘Scrum Master’ Certification from International Scrum Institute, License# 92452068986371, 2021</li>
+              <li>'Retail Domain Level 1' certification provided by GAMAcademy, USTGlobal, Trivandrum, India, 2014</li>
+              <li>'ALPHA leadership certification' on Java provided by GAMAcademy, USTGlobal, Trivandrum, India, 2012</li>
+          </ul>
+          <h4>Awards and Recognitions</h4>
+          <ul data-aos="fade-right">
+              <li>High 5 for 'Winning Together' for on-time successful deployment of a migration project, 2022, RM ESI</li>
+              <li>High 5 for 'Being Brave' for presenting sprint demo confidently and clearly, 2022, RM ESI</li>
+              <li>'Junior Techie' Award for delivery excellence Q4, 2013, UST Global</li>
+              <li>'Execution mind-set' Award for prompt project deliveries Q4, 2014, UST Global</li>
+              <li>'Extra Business Mile' Award for good business knowledge Q1, 2015, UST Global</li>
+          </ul>
+        </div>
+      </div>
+
+
+  <div style="text-align:center;margin:3em 0;margin:3rem 0;">
+      <a href="#aboutMeHeader">
+      <i class="fa fa-long-arrow-up" style="color:#190654;padding:1em;padding:1rem;">&nbsp;&nbsp;Move To Top</i>
+    </a>
+  </div>
+
+  <footer>
+  <div class="bottom-bar" >
+  <p>&copy 2024 | All right reserved.</p>
+  <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+  <!-- <p style="text-align:center;line-height:.5em;line-height:.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
+  </div>
+</footer>
+</section>
+</div>
+</main>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/commonScript.js"></script>
+<script src="js/accordionScript.js"></script>
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script-->
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/debug.addIndicators.min.js"></script>
+<script src="js/aos.js"></script>
+<script>AOS.init({duration: 1200,})</script>
+<script>
+
+/*parallaxScript.js*/
+
+/*Parallax START*/
+function splitScroll1(){
+  const controller1 = new ScrollMagic.Controller();
+  new ScrollMagic.Scene({
+    duration: '200%',
+    triggerElement:'#skillsImage',
+    triggerHook: 0
+  })
+  .setPin('#skillsImage')
+  .addTo(controller1);
+}
+/*Accordion END*/
+splitScroll1();
+
+function splitScroll2(){
+  const controller2 = new ScrollMagic.Controller();
+  new ScrollMagic.Scene({
+    duration: '200%',
+    triggerElement:'#academicsImage',
+    triggerHook: 0
+  })
+  .setPin('#academicsImage')
+  .addTo(controller2);
+}
+splitScroll2();
+</script>
+</body>
+</html>
